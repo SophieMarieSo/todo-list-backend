@@ -25,8 +25,15 @@ taskController.getTask = async (req, res) => {
 
 taskController.updateTask = async (req, res) => {
   try {
-    const updateTask = await Task.find({});
-    res.status(200).json({ status: 'ok', data: updateTask });
+    const task = await Task.findById(req.params.id);
+    if (!task) {
+      throw new Error('App can not find the task');
+    }
+    const fields = Object.keys(req.body);
+    fields.map((item) => (task[item] = req.body[item]));
+    await task.save();
+
+    res.status(200).json({ status: 'ok', data: task });
   } catch (err) {
     res.status(400).json({ status: 'fail', error: err });
   }
@@ -34,7 +41,7 @@ taskController.updateTask = async (req, res) => {
 
 taskController.deleteTask = async (req, res) => {
   try {
-    const deleteTask = await Task.find({});
+    const deleteTask = await Task.findByIdAndDelete(req.params.id);
     res.status(200).json({ status: 'ok', data: deleteTask });
   } catch (err) {
     res.status(400).json({ status: 'fail', error: err });
