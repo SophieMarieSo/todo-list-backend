@@ -5,10 +5,12 @@
 4. 할 일을 삭제할 수 있다
 ---
 
-# 사용스택
-백엔드  `Express` `Mongoose`
+# 사용스택 (package 포함)
+백엔드  `Express` `Mongoose` `Cors` `BodyParser`
 
-프론트엔드  `React`
+프론트엔드  `React` `Axios`
+
+Api Test `Postman`
 
 ---
 
@@ -40,3 +42,6 @@
 ---
 
 ### 배포
+1. DB 배포 `MongonDb Atlas`
+2. 백엔드 배포 `AWS BeanStalk`
+3. 프론트엔드 배포 `Netlify`
