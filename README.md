@@ -5,6 +5,13 @@
 4. 할 일을 삭제할 수 있다
 ---
 
+# 사용스택
+백엔드  `Express` `Mongoose`
+
+프론트엔드  `React`
+
+---
+
 ### 백엔드 준비
 1. 기본 세팅 (npm, Express, Mongoose, app listener)
 2. 라우터 주소 정의 
@@ -24,3 +31,6 @@
 2. 할 일 리스트를 볼 수 있다: /tasks -> `get`
 3. 할 일에 대해 끝남/안끝남을 표시할 수 있다: /tasks/:id -> `put`
 4. 할 일을 삭제할 수 있다: /tasks/:id -> `delete`
+---
+
+### 배포
