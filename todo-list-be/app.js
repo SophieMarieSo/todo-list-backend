@@ -6,8 +6,8 @@ const cors = require('cors');
 
 const app = express();
 app.use(bodyParser.json());
-app.use('/api', indexRouter);
 app.use(cors());
+app.use('/api', indexRouter);
 
 const mongoURI = `mongodb://localhost:27017/todo-list`;
 
