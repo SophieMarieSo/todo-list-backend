@@ -24,6 +24,12 @@
 1. 깃 clone
 2. 기능 만들기 (CRUD)
 3. 테스트
+
+
+프론트엔드 레포 https://github.com/SophieMarieSo/todo-list-frontend
+
+(forked from https://github.com/legobitna/todoapp-fe-for-student)
+
 ---
 
 ### API 정의
