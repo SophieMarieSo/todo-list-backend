@@ -6,11 +6,11 @@ require('dotenv').config();
 const cors = require('cors');
 
 const MONGODB_URI_PROD = process.env.MONGODB_URI_PROD;
-const app = express();
 console.log('====================================');
 console.log(MONGODB_URI_PROD);
 console.log('====================================');
 
+const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/api', indexRouter);
