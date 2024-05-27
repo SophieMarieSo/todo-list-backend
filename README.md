@@ -49,7 +49,7 @@ Api Test `Postman`
 4. 할 일을 삭제할 수 있다: /tasks/:id -> `delete`
 ---
 
-### 배포
+### 배포 (배포 실패...😥)
 1. DB 배포 `MongonDb Atlas`
 2. 백엔드 배포 `AWS BeanStalk`
 3. 프론트엔드 배포 `Netlify`
